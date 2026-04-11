@@ -1,7 +1,7 @@
 # [ThreatNexus](https://threatnexus.onilne/) — Nation-State APT Intelligence
 
-![APT Groups](https://img.shields.io/badge/APT%20Groups-48-blue?style=flat-square&logo=github)
-![Nation-States](https://img.shields.io/badge/Nation--States-12-red?style=flat-square)
+![APT Groups](https://img.shields.io/badge/APT%20Groups-52-blue?style=flat-square&logo=github)
+![Nation-States](https://img.shields.io/badge/Nation--States-14-red?style=flat-square)
 ![Analysis Views](https://img.shields.io/badge/Analysis%20Views-8-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-white?style=flat-square)
@@ -14,7 +14,7 @@ ThreatNexus started from a simple frustration — existing APT references are st
 
 ## What's Inside
 
-ThreatNexus is a community-driven threat intelligence platform covering **48 nation-state APT groups across 12 countries**, built for SOC analysts, threat hunters, incident responders, and security leaders. It goes beyond static group profiles:
+ThreatNexus is a threat intelligence platform covering **52 nation-state APT groups across 14 countries**, built for SOC analysts, threat hunters, incident responders, and security leaders. It goes beyond static group profiles:
 
 - **Operational context** — active campaigns, infrastructure patterns, hunt queries
 - **Sector-specific risk** — "Who's hunting you?" pivot by industry
@@ -37,7 +37,7 @@ ThreatNexus is a community-driven threat intelligence platform covering **48 nat
 
 ## Data
 
-- **52 threat groups** across **12 nation-states**
+- **52 threat groups** across **14 nation-states**
 - Every group includes: TTPs (MITRE ATT&CK mapped), malware families, exploited CVEs, campaigns, infrastructure patterns, hunt queries, and member indictments
 - Regional relevance scoring for UAE/GCC
 - MITRE ATT&CK Navigator export per group
