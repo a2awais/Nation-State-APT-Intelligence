@@ -10,7 +10,7 @@
 
 ---
 
-ThreatNexus started from a simple frustration — existing APT references are static. You look up a group, read a PDF, and still can't answer the questions that actually matter for detection: who shares tooling with who, which technique covers the most actors, and who is actively hunting your industry right now. Built this to answer those questions in one place, and opening it to the threat intelligence and hunting community to use and build on.
+**ThreatNexus** started from a simple frustration — existing APT references are static. You look up a group, read a PDF, and still can't answer the questions that actually matter for detection: who shares tooling with who, which technique covers the most actors, and who is actively hunting your industry right now. Built this to answer those questions in one place, and opening it to the threat intelligence and hunting community to use and build on.
 
 ## What's Inside
 
