@@ -3,7 +3,7 @@
 ![APT Groups](https://img.shields.io/badge/APT%20Groups-52-blue?style=flat-square&logo=github)
 ![Nation-States](https://img.shields.io/badge/Nation--States-14-red?style=flat-square)
 ![Analysis Views](https://img.shields.io/badge/Analysis%20Views-8-green?style=flat-square)
-![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-white?style=flat-square)
 
 🌐 **Live:** [https://threatnexus.onilne/](https://threatnexus.onilne/)
