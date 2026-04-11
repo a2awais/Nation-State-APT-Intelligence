@@ -68,6 +68,6 @@ Attribution is complex. This tool aggregates publicly available intelligence and
 
 ## Author
 
-**Awais Munir** — [GitHub](https://github.com/a2awais) [Linkedin](https://www.linkedin.com/in/iawais/)
+**Awais Munir** — [Linkedin](https://www.linkedin.com/in/iawais/)
 
 Built for the community. Stay vigilant.
