@@ -1,4 +1,4 @@
-# [ThreatNexus](https://threatnexus.onilne/) — Nation-State APT Intelligence
+# [ThreatNexus](https://threatnexus.online/) — Nation-State APT Intelligence
 
 ![APT Groups](https://img.shields.io/badge/APT%20Groups-52-blue?style=flat-square&logo=github)
 ![Nation-States](https://img.shields.io/badge/Nation--States-14-red?style=flat-square)
@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-white?style=flat-square)
 
-🌐 **Live:** [https://threatnexus.onilne/](https://threatnexus.onilne/)
+🌐 **Live:** [https://threatnexus.online/](https://threatnexus.online/)
 
 ---
 
