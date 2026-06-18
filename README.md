@@ -23,7 +23,7 @@ ThreatNexus is a threat intelligence platform covering **67 nation-state APT gro
 - **Sector-specific risk** — "Who's hunting you?" pivot by industry
 - **Regional relevance** — UAE/GCC weighting for Gulf-specific threat assessment
 - **Detection linkage** — Sigma, Elastic, and Splunk rule references per technique
-- **Live intelligence feeds** — 33 sources across vendor research, news, government advisories, CVE tracking, and ransomware victim data
+- **Live intelligence feeds** — Multiple sources across vendor research, news, government advisories, CVE tracking, and ransomware victim data
 - **Machine-readable export** — STIX 2.1 objects over a standards-compliant TAXII 2.1 server, so other platforms can subscribe directly
 
 ## Views
