@@ -2,38 +2,6 @@
 
 Thank you for contributing to the community's threat intelligence resource. Every contribution improves collective defence.
 
-## Adding a New APT Group
-
-All group data lives in **`data/groups.js`** — a single JS module export.
-
-**Step 1** — Copy the template from `data/group-template.json`
-
-**Step 2** — Open `data/groups.js`, scroll to the end of the array before the final `];`
-
-**Step 3** — Add a comma after the last group entry, paste your new group, fill in all fields.
-
-**Step 4** — Validate: paste just the `{...}` object into [jsonlint.com](https://jsonlint.com)
-
-**Step 5** — Push:
-```bash
-git add data/groups.js
-git commit -m "data: add [GroupName] — [Country]"
-git push
-```
-
-## Adding a Campaign to an Existing Group
-
-**Step 1** — Copy the template from `data/campaign-template.json`
-
-**Step 2** — Find the group in `data/groups.js`, locate its `campaigns` array
-
-**Step 3** — Add the new campaign object. Set `end` to `"ongoing"` for active campaigns.
-
-**Step 4** — Push:
-```bash
-git commit -m "data: add [CampaignName] campaign to [GroupName]"
-```
-
 ## Field Reference — APT Group
 
 | Field | Type | Required | Notes |
@@ -88,14 +56,6 @@ Every new group or campaign must cite **at least one** public authoritative sour
 - Cisco Talos, Sophos, Kaspersky GReAT
 
 **No** anonymous blogs, unverified paste sites, Telegram screenshots, or speculative attribution.
-
-## Adding a New Nation-State
-
-If a group belongs to a country not yet in ThreatNexus:
-
-1. Add the country to `NATION_COLORS` in `js/config.js` with a distinct hex colour
-2. Add the country's lat/lng to `COUNTRY_COORDS` in `js/config.js`
-3. Add the group to `data/groups.js`
 
 ## Quality Standards
 
