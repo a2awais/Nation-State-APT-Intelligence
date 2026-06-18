@@ -15,15 +15,6 @@
 
 **ThreatNexus** started from a simple frustration — existing APT references are static. You look up a group, read a PDF, and still can't answer the questions that actually matter for detection: who shares tooling with who, which technique covers the most actors, and who is actively hunting your industry right now. Built this to answer those questions in one place, and opening it to the threat intelligence and hunting community to use and build on.
 
-## What's New
-
-This release is a data-quality and interoperability pass on top of the existing platform:
-
-- **Entity de-duplication & attribution QA** — merged duplicate actor records that MITRE tracks as one group (e.g. Ke3chang → APT15, Lemon Sandstorm → Fox Kitten), corrected a name/G-ID conflation (Velvet Ant → Leviathan/APT40), and normalized three records to their MITRE canonical names (Sea Turtle, Contagious Interview, VOID MANTICORE) while keeping vendor personas as aliases.
-- **Disjoint alias hygiene** — removed cross-actor alias bleed (e.g. DPRK sub-group aliases no longer collide with the Lazarus umbrella; Iran-cluster aliases no longer cross-tag unrelated actors). A strict lint gate now fails the build if any alias, MITRE Group ID, or APT designation ever resolves to more than one actor.
-- **Confidence calibration & lifecycle accuracy** — archived three dormant actors with no reported activity in 4+ years, and recalibrated confidence ratings where attribution language didn't match the stated confidence level.
-- **STIX 2.1 / TAXII 2.1 feed** — the entire actor graph is now exposed as a read-only, standards-compliant feed (see below).
-
 ## What's Inside
 
 ThreatNexus is a threat intelligence platform covering **67 nation-state APT groups and threat clusters across 17 countries**, built for SOC analysts, threat hunters, incident responders, and security leaders. It goes beyond static group profiles:
