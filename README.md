@@ -33,9 +33,9 @@ The platform consolidated from eight standalone views into **six primary tabs** 
 | Tab | Purpose |
 |------|---------|
 | **Globe** | 3D interactive globe with nation-state markers, target arcs, and floating labels |
-| **Cluster** | D3 force-directed graph showing relationships via shared malware, CVEs, and TTPs |
+| **Cluster** | Graph showing relationships via shared malware, CVEs, and TTPs |
 | **Diamond** | Diamond Model cards (Adversary → Capability → Infrastructure → Victim) |
-| **Threat Landscape** | Unified executive brief + campaign timeline (formerly two separate Brief/Campaigns views) — CISO/board-ready intelligence brief with a conflict status banner, year-filterable campaign history, and live news matching |
+| **Threat Landscape** | Unified executive brief + campaign timeline — CISO/board-ready intelligence brief with a conflict status banner, year-filterable campaign history, and live news matching |
 | **Feed** | Live intelligence across 33 curated sources: vendor research blogs, security news, CISA KEV, ransomware victim tracking |
 | **Hunt** | Detection and pivot workbench with five sub-tabs: **Detections** (curated hunt queries), **TTP × APT Matrix** (MITRE ATT&CK heatmap with technique reverse-lookup), **IOC Search**, **Sector Pivot** ("who's hunting your industry," ranked by threat score), and **Repositories** (community detection repo links) |
 
@@ -68,7 +68,7 @@ Step-by-step connection guides for **MISP**, **OpenCTI**, **Microsoft Sentinel**
 All data sourced from public, authoritative intelligence — 20+ vendor research organisations cross-referenced per group, reconciled against MITRE ATT&CK Groups:
 
 **Government & Law Enforcement**
-CISA · NSA · FBI · DOJ · NCSC-UK · ASD-Australia · CCCS-Canada · CERT-UA · BSI · JPCERT/CC · ENISA
+CISA · NSA · FBI · DOJ · NCSC-UK · ASD-Australia · CCCS-Canada · CERT-UA · BSI · JPCERT/CC · ENISA · ETDA
 
 **Vendor Research**
 CrowdStrike · Mandiant/Google TI · Microsoft MSTIC · Palo Alto Unit 42 · Recorded Future Insikt · Kaspersky Securelist · ESET · SentinelOne · IBM X-Force · Sophos · Cisco Talos · Check Point Research · Proofpoint · Trend Micro · Dragos · Google TAG · Wiz · Hunt.io · Socket.dev · Trellix · Abuse.ch
@@ -77,7 +77,7 @@ CrowdStrike · Mandiant/Google TI · Microsoft MSTIC · Palo Alto Unit 42 · Rec
 MITRE ATT&CK · STIX 2.1 / TAXII 2.1 · MISP · Microsoft/CrowdStrike Joint Taxonomy (June 2025)
 
 **Live Feeds**
-CISA KEV · Ransomware.live · ThreatFox/Abuse.ch · 6 security news sources · 5 government CERT feeds
+CISA KEV · Ransomware.live · ThreatFox/Abuse.ch · security news sources · government CERT feeds
 
 ## Live Intelligence Feed
 
@@ -85,11 +85,11 @@ The Feed tab pulls from **33 continuously updated sources** across five categori
 
 | Category | Sources | Cycle |
 |----------|---------|-------|
-| Vendor Research | 20 blogs (Kaspersky, CrowdStrike, Unit 42, Talos, ESET, Sophos, etc.) | Every ~1.5 hrs |
-| News | 6 (BleepingComputer, THN, Krebs, The Record, Dark Reading, SecurityWeek) | Every 30 min |
-| Government / CERTs | 5 (CISA, NCSC-UK, CERT-EU, JPCERT/CC, CISA News) | Every 30 min |
-| CVE / Vulnerability | 1 (CISA KEV — live JSON) | Every 30 min |
-| Ransomware | 1 (Ransomware.live — live victim data) | Every 30 min |
+| Vendor Research | blogs (Kaspersky, CrowdStrike, Unit 42, Talos, ESET, Sophos, etc.)
+| News | (BleepingComputer, THN, Krebs, The Record, Dark Reading, SecurityWeek)
+| Government / CERTs | (CISA, NCSC-UK, CERT-EU, JPCERT/CC, CISA News)
+| CVE / Vulnerability | (CISA KEV)
+| Ransomware | (Ransomware.live — live victim data)
 
 ## Detection Integration
 
