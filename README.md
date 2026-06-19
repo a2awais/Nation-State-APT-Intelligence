@@ -13,7 +13,23 @@
 
 ---
 
-**ThreatNexus** started from a simple frustration — existing APT references are static. You look up a group, read a PDF, and still can't answer the questions that actually matter for detection: who shares tooling with who, which technique covers the most actors, and who is actively hunting your industry right now. Built this to answer those questions in one place, and opening it to the threat intelligence and hunting community to use and build on.
+**ThreatNexus** started with a simple frustration: Most APT references are static.
+
+You look up a threat actor, read through reports or PDFs, and still can't easily answer the questions that matter most for threat hunting and detection engineering:
+- Which groups share malware, infrastructure, or tradecraft?
+- Which TTPs provide the broadest detection coverage?
+- Who is actively targeting my industry right now?
+- What's happening across the threat landscape based on intelligence scattered across vendors, CERTs, security researchers, LinkedIn, X, and news sources?
+
+And even when you find the relevant TTPs, the next question is: **So what?**
+
+How do you actually hunt for this activity in your environment?
+
+**Threat intelligence without actionable outcomes is just news.**
+
+ThreatNexus doesn't stop at mapping actors and TTPs. For every technique, it can generate hunting and detection leads, helping analysts translate intelligence into something operational. Think of it as a starting point—a Sigma-style hunting hypothesis that can be adapted to your environment, telemetry, and tooling. It connect threat actors, campaigns, malware, TTPs, vulnerabilities, detections, and intelligence from multiple sources into a single, searchable view.
+
+**The goal isn't just to help you understand adversaries. It's to help you hunt them.**
 
 ## What's Inside
 
