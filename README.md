@@ -65,19 +65,6 @@ The platform consolidated from eight standalone views into **six primary tabs** 
 - MITRE ATT&CK Navigator export per group
 - Intelligence current as of **June 2026**
 
-## STIX 2.1 / TAXII 2.1 Feed
-
-ThreatNexus exposes its curated actor graph as a **read-only TAXII 2.1 collection** — subscribe once and your platform syncs on its own schedule. No API key required.
-
-- **Discovery:** `https://threatnexus.online/api/taxii2/`
-- **Collection:** `threatnexus-apt` (or its UUID, returned by the collections endpoint)
-- **Contents:** 61 intrusion-sets, 263 malware families, 121 ATT&CK techniques, 52 exploited CVEs, 729 relationships connecting them — fully linked, not a flat IOC list
-- **Standards features:** `match[type]`, `match[id]`, `match[version]`, `added_after` delta sync, cursor-based paging, object manifests
-- **Trust markers:** every object is TLP:CLEAR, attributed to ThreatNexus as producer, carries a STIX confidence score mapped from our analyst rating, and references its MITRE ATT&CK Group ID where applicable
-- **Stable IDs:** deterministic (UUIDv5) object identifiers, so repeated syncs reconcile instead of duplicating
-
-Step-by-step connection guides for **MISP**, **OpenCTI**, **Microsoft Sentinel**, and plain `curl`/scripts are at [**threatnexus.online/integrate.html**](https://threatnexus.online/integrate.html). A downloadable full STIX bundle is also available there for one-off imports.
-
 ## Sources
 
 All data sourced from public, authoritative intelligence — 20+ vendor research organisations cross-referenced per group, reconciled against MITRE ATT&CK Groups:
