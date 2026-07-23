@@ -9,7 +9,6 @@
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-white?style=flat-square)
 
 🌐 **Live:** [https://threatnexus.online/](https://threatnexus.online/)
-🔌 **Integrate (STIX/TAXII feed):** [https://threatnexus.online/integrate.html](https://threatnexus.online/integrate.html)
 
 ---
 
