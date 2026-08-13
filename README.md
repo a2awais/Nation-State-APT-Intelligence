@@ -1,8 +1,8 @@
 # ThreatNexus — Nation-State APT Threat Intelligence
 
 **Free. No login.** 67 nation-state APT groups across 17 countries — mapped to MITRE
-ATT&CK, linked to detections, and updated from live vendor, CERT and government
-reporting.
+ATT&CK, linked to detections, and updated continuously from vendor research, CERT
+advisories and government reporting.
 
 ### 🌐 **[threatnexus.online](https://threatnexus.online/)**
 
@@ -10,7 +10,7 @@ reporting.
 ![Nation-States](https://img.shields.io/badge/Nation--States-17-red?style=flat-square)
 ![Intel Sources](https://img.shields.io/badge/Intel%20Sources-41-orange?style=flat-square)
 ![STIX/TAXII](https://img.shields.io/badge/STIX%2FTAXII-2.1-9cf?style=flat-square)
-![Content](https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey?style=flat-square)
+![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-white?style=flat-square)
 
 ---
@@ -26,39 +26,60 @@ and still can't answer the questions that decide what you do next:
 - **Who is targeting my sector right now?**
 - **What changed this week**, across twenty vendor blogs and five CERT feeds?
 
-And once you have the technique — *so what?* How do you actually hunt it in your
-telemetry?
+And once you have the technique — *so what?* How do you hunt it in your telemetry?
 
 **Threat intelligence without an operational outcome is just news.** ThreatNexus
 connects threat actors, campaigns, malware, ATT&CK techniques, CVEs and live reporting
 into one searchable view, and carries every technique through to a hunting lead you
 can adapt.
 
-## What you get
+## Capabilities
 
-| | |
-|---|---|
-| **Threat actor dossiers** | 67 nation-state and state-aligned groups — aliases, sponsors, TTPs, malware, exploited CVEs, campaigns, infrastructure patterns, named indictments |
-| **Sector pivot** | *"Who's hunting my industry?"* — every actor targeting your sector, ranked |
-| **ATT&CK matrix** | TTP × APT heatmap with technique reverse-lookup — find the techniques with the widest actor coverage |
-| **Relationship graph** | Shared malware, shared CVEs, shared tradecraft, visualised |
-| **Diamond Model** | Adversary → Capability → Infrastructure → Victim, per actor |
-| **Live intel feed** | 41 sources — vendor research, security news, government CERT advisories, CISA KEV, ransomware victim data |
-| **Threat Landscape** | Board-ready executive brief and campaign timeline |
-| **IOC search** | Look up a domain, IP, hash or URL across multiple intelligence sources |
-| **Interactive globe** | Nation-state markers, target arcs, live threat geography |
-| **STIX 2.1 / TAXII 2.1** | Subscribe from any compliant TIP or SIEM — no account required |
+**Threat actor intelligence**
+67 nation-state and state-aligned groups. Each dossier carries aliases and who assigns
+them, sponsor, targeted sectors and regions, ATT&CK-mapped TTPs, malware families,
+exploited CVEs, campaign history, infrastructure patterns and named indictments —
+with the government advisories and vendor research behind each claim.
+
+**Pivots that answer real questions**
+*Who's hunting my industry?* — every actor targeting your sector, ranked. *Which
+technique buys me the most coverage?* — a TTP × APT heatmap with technique
+reverse-lookup. *Who else uses this malware?* — a relationship graph over shared
+tooling, shared CVEs and shared tradecraft. Plus Diamond Model cards per actor and an
+interactive globe of targeting geography.
+
+**Live intelligence feed**
+41 continuously polled sources — vendor research, security news, government CERT
+advisories, CISA KEV and ransomware victim data — deduplicated, clustered by story,
+severity-ranked and attributed to actors where the reporting supports it. Exportable
+as a TLP:CLEAR advisory.
+
+**PRISM — indicator enrichment**
+Submit a domain, IP, hash or URL and get a single assembled picture: registration and
+hosting, passive DNS, certificate history, sandbox and multi-engine verdicts,
+reputation and abuse signals, plus any prior sighting inside the ThreatNexus corpus.
+Every datum is labelled with the provider that supplied it and when it was observed.
+Infrastructure facts never move the malice verdict, and *benign* is never asserted
+without positive evidence — absence of evidence returns Unknown, not clean.
+
+**Threat Landscape**
+Board-ready executive brief and campaign timeline, with conflict status and
+year-filterable history.
+
+**Machine-readable access**
+STIX 2.1 objects over a read-only TAXII 2.1 server. Point any compliant TIP or SIEM at
+the discovery endpoint and subscribe — no account required.
 
 ## Why trust the data
 
 - **One actor, one identity.** Aliases, MITRE Group IDs and APT designations each
-  resolve to exactly one actor — enforced automatically on every data change. Vendor
+  resolve to exactly one actor, enforced automatically on every data change. Vendor
   personas are aliases, not duplicate entries.
 - **Precision over recall on attribution.** An actor is linked to a report only when
   the text uses the name *as an actor name*. A missing link costs you nothing; a wrong
   one costs the platform its reason to exist.
-- **Sourced, not asserted.** Every dossier cites its government advisories, vendor
-  research and indictments.
+- **Sourced, not asserted.** Every dossier cites its advisories, research and
+  indictments.
 - **Reviewed by a human before publication.** Automation proposes. A person approves.
 - **Dormancy is recorded, not hidden** — inactive actors are archived rather than left
   implying they're current.
@@ -67,7 +88,7 @@ Intelligence current as of **June 2026**.
 
 ## Detection
 
-Every technique in a dossier links straight through to community detection content —
+Every technique in a dossier links through to community detection content —
 [SigmaHQ](https://github.com/SigmaHQ/sigma),
 [Elastic Detection Rules](https://github.com/elastic/detection-rules),
 [Splunk Security Content](https://github.com/splunk/security_content) and
@@ -99,23 +120,28 @@ Socket.dev · Trellix · abuse.ch
 ## About this repository
 
 This is the **community and documentation home** for ThreatNexus. The platform runs as
-a hosted service and its source code is not published here — but **the intelligence is
+a hosted service and its source code is not published — but **the intelligence is
 open**: free to use, redistribute and build on under CC BY 4.0, and available
 machine-readable over TAXII 2.1.
 
 **Contributions here are intelligence contributions.** New actors, new campaigns,
-corrections, alias reconciliations and source references are welcome, reviewed, and
-credited.
+corrections, alias reconciliations and source references are welcome, reviewed against
+public sources, and credited.
 
-→ **[How to contribute](CONTRIBUTING.md)** · **[Licensing & reuse](LICENSES.md)** ·
-**[Security](SECURITY.md)** · **[Credits](CREDITS.md)**
+→ **[How to contribute](CONTRIBUTING.md)**
 
-## Licensing in one line
+## Licence
 
-**Intelligence and documentation: CC BY 4.0** — use it, redistribute it, build on it
-commercially; credit ThreatNexus. **Platform source: proprietary.** ThreatNexus does
-not own the underlying third-party reporting and does not claim to —
-**[full terms](LICENSES.md)**.
+**Content — CC BY 4.0.** The dossiers, their structure and analysis, the STIX/TAXII
+exports and this documentation are free to use and redistribute, including
+commercially. Credit ThreatNexus and don't imply endorsement.
+
+**The underlying reporting is not ours.** Dossiers are compiled from third-party
+government and vendor research; those reports remain the property of their authors and
+are governed by their own terms. CC BY 4.0 covers the compilation, structure and
+analysis — not the source material.
+
+**Platform source is proprietary** and not published here.
 
 ## Disclaimer
 
