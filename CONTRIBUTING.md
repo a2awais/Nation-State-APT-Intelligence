@@ -5,8 +5,7 @@ the more practitioners push back on it.
 
 **Read this first:** this repository contains **no platform source code**. ThreatNexus
 runs as a hosted service and the pipeline is proprietary. What you contribute here is
-**intelligence, corrections, and documentation** — which is the part that actually
-determines whether the platform is worth using.
+**intelligence, corrections, and documentation**.
 
 ---
 
