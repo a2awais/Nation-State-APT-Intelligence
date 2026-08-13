@@ -1,3 +1,11 @@
+Copyright (c) 2026 Awais Munir / ThreatNexus (threatnexus.online)
+
+This license applies to the intelligence, documentation and content in
+this repository. It does not apply to ThreatNexus platform source code,
+which is not published here.
+
+=======================================================================
+
 Attribution 4.0 International
 
 =======================================================================
