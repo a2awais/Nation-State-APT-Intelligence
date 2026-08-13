@@ -1,184 +1,134 @@
 # Contributing to ThreatNexus
 
-Thanks for wanting to help. This project is one person's corpus, and it gets better
-the more practitioners push back on it.
+ThreatNexus tracks 67 nation-state APT groups across 17 countries — every dossier
+mapped to MITRE ATT&CK, cited to government advisories and vendor research, and
+reconciled so that one alias resolves to exactly one actor. It's used by threat
+hunters, detection engineers and incident responders, and it's free.
 
-**Read this first:** this repository contains **no platform source code**. ThreatNexus
-runs as a hosted service and the pipeline is proprietary. What you contribute here is
-**intelligence, corrections, and documentation**.
+**It gets better when practitioners contribute to it.** You work incidents, read
+vendor reporting, and notice things the corpus doesn't have yet. That's exactly what
+this process is for.
 
 ---
 
-## What we're looking for
+## What you can contribute
 
-**High value, always welcome:**
+**Threat actors.** A nation-state or state-aligned group that should be tracked, or
+new detail on one that already is — aliases and who assigns them, sponsor,
+targeting, ATT&CK-mapped TTPs.
 
-| Contribution | What makes it accepted |
-|---|---|
-| **New threat actor** | A publicly reported nation-state or state-aligned group not yet tracked, with at least one primary source (vendor research, CERT advisory, indictment) |
-| **New campaign** | A named operation with dated reporting and an identified or credibly suspected actor |
-| **Corrections** | Wrong attribution, stale "last seen", misattributed malware, an alias mapped to the wrong actor. **These are the most valuable submissions we receive.** |
-| **Alias reconciliation** | A vendor persona that is the same cluster as an existing entry, with the reporting that establishes the overlap |
-| **Source references** | A government advisory, indictment, or vendor report that should be cited on an existing dossier |
-| **TTP / malware / CVE additions** | Technique or tooling attributed to a tracked actor in published reporting |
-| **Dormancy signals** | Evidence an actor should be archived, or reactivated |
-| **Documentation** | Clarity fixes, methodology questions, integration guides |
+**Campaigns.** Named operations, their timeline, their targets, and the actor behind
+them.
 
-**Not accepted, and why:**
+**Malware and tooling.** Families and utilities attributed to a tracked actor,
+including capability notes and how the attribution was established.
 
-- ❌ **Anything non-public.** No client data, no incident details from your day job,
-  no TLP:AMBER/RED material, nothing under NDA. This is the hard line and there are
-  no exceptions.
-- ❌ **Unsourced claims.** "I heard APT-X is behind this" is not an intelligence
-  submission. Every factual claim needs a citable public source.
-- ❌ **Speculative attribution.** Circumstantial pattern-matching without reporting
-  behind it. Precision over recall is the project's explicit policy.
-- ❌ **Live indicators as a bulk feed.** Individual IOCs tied to a dossier are fine;
-  bulk blocklists are not what this corpus is.
-- ❌ **Pull requests against platform code.** There isn't any here.
+**Intelligence and corrections.** New advisories or research that should be cited on
+an existing dossier. Alias reconciliations where two vendor personas turn out to be
+one cluster. Dormancy signals. Fresh CVEs under active exploitation.
+
+**Corrections are the most valuable submissions we receive.** A wrong attribution
+caught early is worth more to this corpus than ten additions — if you spot one, say
+so, and it goes to the front of the queue.
 
 ---
 
 ## How to submit
 
-### 1. Open an issue using the right template
+**Open an issue** using the template that fits — New Actor, New Campaign, Malware,
+or Correction. One subject per issue keeps review fast.
 
-- **New Actor** · **New Campaign** · **Correction** · **Source Reference** ·
-  **Documentation**
+**Bring the source.** Every submission carries:
 
-One submission per issue. A single issue proposing six actors cannot be partially
-accepted, and it will be asked to be split.
+- **A link to the reporting** — vendor research, CERT or government advisory, court
+  filing, or peer-reviewed work.
+- **The date of the reporting.**
+- **What the source says**, briefly, in your words — enough to show the claim is in
+  the source.
+- **Your read on confidence**, and what would change it.
 
-### 2. Include the evidence
+For a new actor, the more of this you have the faster it moves: aliases and their
+origin, suspected sponsor, targeted sectors and regions, observed malware, and ATT&CK
+technique IDs.
 
-Every submission needs:
+That's the whole bar. **If a named public source states it, it's reviewable.** Rough
+notes with a good link beat a polished writeup without one — send it and we'll work
+it out together.
 
-- **At least one primary source URL** — vendor research, CERT/government advisory,
-  court document, or peer-reviewed work. News coverage *of* a report is acceptable
-  as a pointer, but link the report itself where it exists.
-- **The date of the reporting**, not the date you found it.
-- **What the source actually says**, in your words — a short quote or paraphrase
-  showing the claim is in the source rather than inferred from it.
-- **Your confidence** and why: what would change your mind?
-
-For a new actor, also include: known aliases and who assigns them, suspected
-sponsor and the basis for that, targeted sectors and regions, observed malware, and
-MITRE ATT&CK technique IDs where reporting supports them.
-
-**A note on sourcing standard.** The bar is not "is this plausible" — it is "does a
-named public source state this." Contributions that meet that bar get reviewed
-quickly. Contributions that don't get one round of questions and then get closed.
-That's not gatekeeping for its own sake; a corpus that admits unsourced claims
-stops being worth citing.
-
-### 3. Sign off
-
-Add this line to your issue or PR:
-
-```
-Signed-off-by: Your Name <your@email.example>
-```
-
-By signing off you certify that:
-
-1. You have the right to submit this material and to license it under the project's
-   terms (CC BY 4.0 for intelligence and documentation, Apache-2.0 for code samples).
-2. **The material is derived from publicly available sources.** It is not
-   confidential, client-privileged, classified, or subject to restricted handling
-   (TLP:AMBER or above).
-3. You understand the submission and your attribution will be public and permanent.
-
-There is **no CLA and no copyright assignment.** You keep your copyright. Inbound
-licence equals outbound licence — nothing more.
+**Sign off** with `Signed-off-by: Your Name <you@example.com>`, confirming you have
+the right to share the material, that it comes from public sources, and that it isn't
+client-confidential or restricted-handling. You keep your copyright — there's no CLA
+and no assignment.
 
 ---
 
-## What happens next
+## How it gets in
 
-Every submission goes through the same review path the platform's own automated
-pipeline goes through. Nothing skips it, including submissions from the maintainer.
+Everything follows the same path, including the maintainer's own work:
 
 ```
-  submission
-      │
-      ▼
-  [1] Triage           — scope, duplicates, sourcing bar        (usually 3–7 days)
-      │
-      ▼
-  [2] Verification     — sources checked at origin; claims must appear
-      │                   in the cited text, not be inferred from it
-      ▼
-  [3] Reconciliation   — canonical naming against MITRE ATT&CK Groups;
-      │                   alias collision and namesake checks
-      ▼
-  [4] Human approval   — accepted, revised, or declined with reasons
-      │
-      ▼
-  [5] Published        — appears on threatnexus.online and in the
-                          STIX/TAXII export on the next data build
+  Your submission
+        │
+   ▶ Triage           scope and sourcing, usually within a week
+        │
+   ▶ Verification     sources checked at origin — claims must appear
+        │              in the cited text
+        │
+   ▶ Reconciliation   canonical naming against MITRE ATT&CK Groups,
+        │              alias and namesake collision checks
+        │
+   ▶ Review           accepted, refined, or discussed further
+        │
+   ▶ Live             on threatnexus.online and in the STIX/TAXII
+                       export on the next data build
 ```
 
-**Expect questions.** Most accepted submissions go through at least one round. That
-is the review working, not a rejection.
+Expect a conversation. Most accepted submissions go through a round of questions —
+that's the review doing its job, and it's usually where the entry gets sharper.
 
-**Declines get reasons.** If a submission doesn't make it, you'll be told which step
-it failed and what would change the answer. A decline for insufficient sourcing is
-not a decline forever — reopen it when better reporting exists.
+If something doesn't make it, you'll be told which step it stopped at and what would
+change the answer. That's rarely permanent: reopen it when stronger reporting lands.
 
-**Timelines are best-effort.** This is maintained by one person alongside a full-time
-job. Triage is usually within a week; a complex new-actor submission may take longer.
-If something has gone quiet for three weeks, ping the issue.
+Timelines are best-effort — this is maintained by one person alongside a full-time
+job. Triage is usually inside a week. If an issue has gone quiet for three weeks,
+give it a nudge.
 
 ---
 
 ## Credit
 
-Accepted contributions are credited. Specifically:
+Accepted contributions are credited by name or handle — on the dossier you improved,
+and in the project credits. Prefer to stay anonymous? Say so in the issue and that's
+respected.
 
-- Your name (or handle, your choice) is listed in `CREDITS.md` in this repository.
-- Substantive contributions — a new actor, a significant correction, a campaign —
-  are credited on the affected dossier on the live site.
-- You can ask to be credited anonymously, or not at all. Say so in the issue.
-
-Credit is for **accepted** contributions. Opening an issue is not itself a
-contribution credit, and volume is not the metric — one well-sourced correction to a
-wrong attribution is worth more to this project than twenty additions.
+Credit follows impact, not volume. One well-sourced correction to a wrong attribution
+counts for more here than twenty additions.
 
 ---
 
-## Reporting problems
+## Good to know
 
-- **Security vulnerability** → `SECURITY.md` or
-  `https://threatnexus.online/.well-known/security.txt`. Please do not open a public
-  issue for a live vulnerability.
-- **Wrong or harmful attribution** → open a Correction issue and mark it urgent. A
-  false attribution is treated as a defect with priority over any feature work.
-- **You are named on a dossier and believe it is wrong** → contact the maintainer
-  directly via the address in `SECURITY.md`. This will be looked at promptly and in
-  good faith.
-- **Licensing question not answered by `LICENSES.md`** → open an issue. An unclear
-  licence is a bug in the licence, and it gets fixed in the file rather than settled
-  in a private reply.
+**This repository is the community and documentation home.** ThreatNexus runs as a
+hosted service and its source isn't published here, so contributions are intelligence
+contributions rather than code — which is the part that determines whether the
+platform is worth using.
 
----
+**Keep it public-source.** Everything in ThreatNexus is TLP:CLEAR and traceable to a
+citable source, which is what makes it safe to redistribute and worth citing. Please
+don't send anything client-confidential, under NDA, or marked TLP:AMBER or above.
 
-## Conduct
+**Something wrong on a dossier about you or your organisation?** Contact the
+maintainer directly — see
+[security.txt](https://threatnexus.online/.well-known/security.txt). It will be
+looked at promptly and in good faith.
 
-Be direct, be technical, be kind. Disagreement about attribution is the normal
-condition of this field and is welcome — the corpus improves because people argue
-with it. Personal hostility is not, and will end the conversation.
+**Found a security vulnerability in the platform?** Same contact — please not a
+public issue.
 
 ---
 
-## Licensing summary
+## Licence
 
-Contributions are accepted **inbound = outbound**:
-
-| You contribute | It is published under |
-|---|---|
-| Intelligence, dossier content, corrections | CC BY 4.0 |
-| Documentation | CC BY 4.0 |
-| Code samples, schemas, integration examples | Apache-2.0 |
-
-Full terms, and the notice on third-party intelligence ThreatNexus does **not** own:
-[`LICENSES.md`](LICENSES.md).
+Contributions are published under the project's terms: **CC BY 4.0** for intelligence
+and documentation. Inbound equals outbound — nothing more is asked of you. See the
+[README](README.md#licence).
