@@ -69,7 +69,7 @@ year-filterable history.
 **Machine-readable access**
 ## STIX 2.1 / TAXII 2.1
 Discovery:  `https://threatnexus.online/api/taxii2/` Public, no authentication.
-Full guide: https://threatnexus.online/integrate.html
+- Full guide: https://threatnexus.online/integrate.html
 
 ## Why trust the data
 
