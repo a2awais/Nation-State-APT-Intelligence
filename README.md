@@ -36,7 +36,7 @@ can adapt.
 ## Capabilities
 
 **Threat actor intelligence**
-67 nation-state and state-aligned groups. Each dossier carries aliases and who assigns
+68 nation-state and state-aligned groups. Each dossier carries aliases and who assigns
 them, sponsor, targeted sectors and regions, ATT&CK-mapped TTPs, malware families,
 exploited CVEs, campaign history, infrastructure patterns and named indictments —
 with the government advisories and vendor research behind each claim.
