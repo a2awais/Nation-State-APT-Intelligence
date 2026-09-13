@@ -68,8 +68,7 @@ year-filterable history.
 
 **Machine-readable access**
 ## STIX 2.1 / TAXII 2.1
-Discovery: https://threatnexus.online/api/taxii2/
-Public, no authentication. Read `api_roots[0]` from the discovery response. Curated corpus — poll every 6h; use `ETag`/`If-None-Match` and `?added_after=`.
+Discovery:  `https://threatnexus.online/api/taxii2/` Public, no authentication.
 Full guide: https://threatnexus.online/integrate.html
 
 ## Why trust the data
