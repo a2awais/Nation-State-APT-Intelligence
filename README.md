@@ -6,7 +6,7 @@ advisories and government reporting.
 
 ### 🌐 **[threatnexus.online](https://threatnexus.online/)**
 
-![APT Groups](https://img.shields.io/badge/APT%20Groups-67-blue?style=flat-square)
+![APT Groups](https://img.shields.io/badge/APT%20Groups-68-blue?style=flat-square)
 ![Nation-States](https://img.shields.io/badge/Nation--States-17-red?style=flat-square)
 ![Intel Sources](https://img.shields.io/badge/Intel%20Sources-41-orange?style=flat-square)
 ![STIX/TAXII](https://img.shields.io/badge/STIX%2FTAXII-2.1-9cf?style=flat-square)
