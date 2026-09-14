@@ -85,8 +85,6 @@ Discovery:  `https://threatnexus.online/api/taxii2/` Public, no authentication.
 - **Dormancy is recorded, not hidden** — inactive actors are archived rather than left
   implying they're current.
 
-Intelligence current as of **June 2026**.
-
 ## Detection
 
 Every technique in a dossier links through to community detection content —
