@@ -36,7 +36,7 @@ can adapt.
 ## Capabilities
 
 **Threat actor intelligence**
-68 nation-state and state-aligned groups. Each dossier carries aliases and who assigns
+110 nation-state and state-aligned groups. Each dossier carries aliases and who assigns
 them, sponsor, targeted sectors and regions, ATT&CK-mapped TTPs, malware families,
 exploited CVEs, campaign history, infrastructure patterns and named indictments —
 with the government advisories and vendor research behind each claim.
@@ -49,7 +49,7 @@ tooling, shared CVEs and shared tradecraft. Plus Diamond Model cards per actor a
 interactive globe of targeting geography.
 
 **Live intelligence feed**
-41 continuously polled sources — vendor research, security news, government CERT
+40 continuously polled sources — vendor research, security news, government CERT
 advisories, CISA KEV and ransomware victim data — deduplicated, clustered by story,
 severity-ranked and attributed to actors where the reporting supports it. Exportable
 as a TLP:CLEAR advisory.
