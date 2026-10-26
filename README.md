@@ -98,7 +98,7 @@ Companion repository: **[a2awais/Threat-Hunting](https://github.com/a2awais/Thre
 
 ## Sources
 
-Compiled from public reporting — 20+ research organisations cross-referenced per
+Compiled from public reporting — 40+ research organisations cross-referenced per
 actor, reconciled against MITRE ATT&CK Groups.
 
 **Government & law enforcement** — CISA · NSA · FBI · DOJ · NCSC-UK · ASD · CCCS ·
