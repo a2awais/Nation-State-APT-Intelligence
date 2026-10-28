@@ -1,13 +1,13 @@
 # [ThreatNexus](https://threatnexus.online) — Nation-State APT Threat Intelligence
 
-**Free. No login.** 120 nation-state APT groups across 16 countries — mapped to MITRE
+**Free. No login.** 130 nation-state APT groups across 17 countries — mapped to MITRE
 ATT&CK, linked to detections, and updated continuously from vendor research, CERT
 advisories and government reporting.
 
 ### 🌐 **[threatnexus.online](https://threatnexus.online/)**
 
-![APT Groups](https://img.shields.io/badge/APT%20Groups-120-blue?style=flat-square)
-![Nation-States](https://img.shields.io/badge/Nation--States-16-red?style=flat-square)
+![APT Groups](https://img.shields.io/badge/APT%20Groups-130-blue?style=flat-square)
+![Nation-States](https://img.shields.io/badge/Nation--States-17-red?style=flat-square)
 ![Intel Sources](https://img.shields.io/badge/Intel%20Sources-40-orange?style=flat-square)
 ![STIX/TAXII](https://img.shields.io/badge/STIX%2FTAXII-2.1-9cf?style=flat-square)
 ![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square)
@@ -36,7 +36,7 @@ can adapt.
 ## Capabilities
 
 **Threat actor intelligence**
-120 nation-state and state-aligned groups. Each dossier carries aliases and who assigns
+130 nation-state and state-aligned groups. Each dossier carries aliases and who assigns
 them, sponsor, targeted sectors and regions, ATT&CK-mapped TTPs, malware families,
 exploited CVEs, campaign history, infrastructure patterns and named indictments —
 with the government advisories and vendor research behind each claim.
