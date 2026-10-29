@@ -1,6 +1,6 @@
 # Contributing to ThreatNexus
 
-ThreatNexus tracks 130 nation-state APT groups across 17 countries — every dossier
+ThreatNexus tracks 100+ nation-state APT groups across 17 countries — every dossier
 mapped to MITRE ATT&CK, cited to government advisories and vendor research, and
 reconciled so that one alias resolves to exactly one actor. It's used by threat
 hunters, detection engineers and incident responders, and it's free.
