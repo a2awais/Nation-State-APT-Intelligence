@@ -1,10 +1,10 @@
-# [ThreatNexus](https://threatnexus.online) — Nation-State APT Threat Intelligence
+# [ThreatNexus](https://threatnexus.app) — Nation-State APT Threat Intelligence
 
 **Free. No login.** 137 nation-state APT groups across 17 countries — mapped to MITRE
 ATT&CK, linked to detections, and updated continuously from vendor research, CERT
 advisories and government reporting.
 
-### 🌐 **[threatnexus.online](https://threatnexus.online/)**
+### 🌐 **[threatnexus.app](https://threatnexus.app/)**
 
 ![APT Groups](https://img.shields.io/badge/APT%20Groups-137-blue?style=flat-square)
 ![Nation-States](https://img.shields.io/badge/Nation--States-17-red?style=flat-square)
@@ -68,8 +68,8 @@ year-filterable history.
 
 **Machine-readable access**
 ## STIX 2.1 / TAXII 2.1
-Discovery:  `https://threatnexus.online/api/taxii2/` Public, no authentication.
-- Full guide: https://threatnexus.online/integrate.html
+Discovery:  `https://threatnexus.app/api/taxii2/` Public, no authentication.
+- Full guide: https://threatnexus.app/integrate.html
 
 ## Why trust the data
 
