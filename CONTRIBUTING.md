@@ -79,7 +79,7 @@ Everything follows the same path, including the maintainer's own work:
         │
    ▶ Review           accepted, refined, or discussed further
         │
-   ▶ Live             on threatnexus.online and in the STIX/TAXII
+   ▶ Live             on threatnexus.app and in the STIX/TAXII
                        export on the next data build
 ```
 
@@ -119,7 +119,7 @@ don't send anything client-confidential, under NDA, or marked TLP:AMBER or above
 
 **Something wrong on a dossier about you or your organisation?** Contact the
 maintainer directly — see
-[security.txt](https://threatnexus.online/.well-known/security.txt). It will be
+[security.txt](https://threatnexus.app/.well-known/security.txt). It will be
 looked at promptly and in good faith.
 
 **Found a security vulnerability in the platform?** Same contact — please not a
