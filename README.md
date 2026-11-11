@@ -4,7 +4,7 @@
 ATT&CK, linked to detections, and updated continuously from vendor research, CERT
 advisories and government reporting.
 
-### 🌐 **[threatnexus.app](https://threatnexus.app/)**
+### 🌐 **[threatnexus.app](https://threatnexus.app/)** OR ### 🌐 **[threatnexus.online](https://threatnexus.online/)**
 
 ![APT Groups](https://img.shields.io/badge/APT%20Groups-137-blue?style=flat-square)
 ![Nation-States](https://img.shields.io/badge/Nation--States-17-red?style=flat-square)
