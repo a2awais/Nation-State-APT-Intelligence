@@ -66,10 +66,43 @@ without positive evidence — absence of evidence returns Unknown, not clean.
 Board-ready executive brief and campaign timeline, with conflict status and
 year-filterable history.
 
-**Machine-readable access**
-## STIX 2.1 / TAXII 2.1
-Discovery:  `https://threatnexus.app/api/taxii2/` Public, no authentication.
-- Full guide: https://threatnexus.app/integrate.html
+## 🔌 Integrate
+
+**Two ways to plug ThreatNexus nation-state APT intelligence into your stack:** a STIX/TAXII feed for your TIP, SIEM or SOAR, and an MCP server for your AI assistant.
+
+`STIX 2.1` · `TAXII 2.1` · `MCP` · `TLP:CLEAR` · `No API key` · `Read-only`
+
+### 📡 STIX 2.1 / TAXII 2.1: threat feed
+
+| | |
+|---|---|
+| **Discovery** | `https://threatnexus.app/api/taxii2/` |
+| **Collection** | `threatnexus-apt` |
+| **Objects** | Intrusion sets · ATT&CK techniques · Malware families · Exploited CVEs · Relationships |
+| **Sync** | Delta pulls (`added_after`) · ETag / `304 Not Modified` · Deterministic IDs, so no duplicates |
+| **Refresh** | Curated, updated over days. Poll every 6 h (hourly at most) |
+
+**Quick start:** point any TAXII 2.1 client at the discovery URL, then read `api_roots[0]` from the response. That's your API root; it isn't the discovery URL.
+
+📖 Guide and full bundle download: https://threatnexus.app/integrate.html
+
+### 🤖 MCP server: ask your AI assistant
+
+Connect **Claude, ChatGPT, Cursor, VS Code** or any MCP client. You get cited answers on APT actors, ATT&CK coverage, detection rules and IOCs.
+
+**URL:** `https://mcp.threatnexus.app/mcp` (Streamable HTTP, no account needed)
+
+```bash
+claude mcp add --transport http threatnexus https://mcp.threatnexus.app/mcp
+```
+
+**12 read-only tools:** actor dossiers · campaigns · ATT&CK coverage · actor → detections (Splunk ESCU, Elastic, Sigma, Hayabusa) · intel search · CVE → actors · IOC pivots · actor extraction from pasted reports
+
+> *"Using ThreatNexus, which Iranian actors target the UAE, and what detections cover their initial access?"*
+
+Every answer links back to the dossier, report or rule it draws on. Attribution is given exactly as the dossier records it, tier and confidence included; an actor named in an article isn't presented as responsible.
+
+📖 Setup for each client: https://threatnexus.app/mcp
 
 ## Why trust the data
 
